@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@font-face { font-family: 'Japones'; src: url('../fonts/Japones.ttf') }
+
+:root {
+  --color-theme: rgb(255, 0, 0);
+  --color-theme-rgb: 255,0,0;
+
+  --color: white;
+  --background-color: black;
+  --background-color-code: 0,0,0;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+a { text-decoration: none }
+p { margin: 0 }
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding-inline: 2vw;
+  padding-block: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3vh;
+  background: linear-gradient(to bottom right, rgb(115, 0, 160), rgb(200, 0, 255));
+  color: white;
+  font-size: 3vh;
+  font-family: sans-serif;
+}
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom right, rgb(200, 0, 255), rgb(115, 0, 160));
+  color: black;
+}
+.button i {
+  display: none;
+}
+
+.button.block {
+  background: linear-gradient(to bottom right, rgb(22, 22, 22), rgb(128, 128, 128));
+}
+.button.block:hover {
+  cursor: not-allowed;
+  background: linear-gradient(to bottom right, rgb(42, 42, 42), rgb(138, 138, 138));
+}
+.button.block span {
+  display: none;
+}
+.button.block i {
+  display: inline-block;
+}

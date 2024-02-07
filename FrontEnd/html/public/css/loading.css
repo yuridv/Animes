@@ -1,0 +1,31 @@
+.loading {
+  width: 100vw; 
+  height: 100vh; 
+  background-image: linear-gradient(to bottom right, #353535, #1f1f1f);
+  color: white;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.loading img {
+  width: 8vh;
+  height: 8vh;
+}
+
+.loading img {
+  width: 8vh;
+  height: 8vh;
+}
+
+.loading a {
+  font-size: 2.8vh; 
+  letter-spacing: 0.1vw; 
+  margin-top: 3vh;
+  font-family: 'Japones', sans-serif!important;;
+}
+
+.loading a span { 
+  color: var(--color-theme); margin-left: 0.1vw;
+}
